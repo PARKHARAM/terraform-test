@@ -21,7 +21,7 @@ resource "google_compute_instance" "default8520" {
     }
   }
   network_interface {
-    subnetwork = data.google_compute_subnetwork.subnet.self_link
+    network = "vpc-test"
     access_config {
     }
   }

@@ -1,6 +1,6 @@
 data "google_compute_subnetwork" "subnet" {
   name    = "sbn-hr-255"
-  project = "haram-326012"
+  project = "haram"
   region  = "asia-northeast3"
 }
 

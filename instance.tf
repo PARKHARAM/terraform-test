@@ -4,7 +4,7 @@
 resource "google_compute_instance" "default8520" {
   name         = var.VM_NAME
   machine_type = var.VM_MACHINE_TYPE
-  zone         = "us-central1-a"
+  zone         = "asia-northeast3-b"
 
 
   metadata_startup_script = data.template_cloudinit_config.cloudinit-jenkins.rendered

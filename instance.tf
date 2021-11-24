@@ -21,7 +21,7 @@ resource "google_compute_instance" "default8520" {
     }
   }
   network_interface {
-    network = "vpc-test"
+    network = "defalut"
     access_config {
     }
   }

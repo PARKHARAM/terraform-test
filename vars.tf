@@ -1,5 +1,5 @@
 variable "VM_NAME"{
-    default = "jenkins-vm-instance"
+    default = "jenkins-vm-instance22"
 }
 
 variable "VM_ZONE"{

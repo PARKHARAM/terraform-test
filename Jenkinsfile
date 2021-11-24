@@ -6,11 +6,7 @@
     }
 
     stages {
-      stage('fetch_latest_code') {
-        steps {
-         
-        }
-      }
+      
 
       stage('TF Init&Plan') {
         steps {

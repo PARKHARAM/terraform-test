@@ -1,7 +1,3 @@
-resource "google_service_account" "default" {
-  account_id   = "terraform-test@haram-326012.iam.gserviceaccount.com"
-  display_name = "Service Account"
-}
 
 resource "google_compute_instance" "default" {
   name         = "test"

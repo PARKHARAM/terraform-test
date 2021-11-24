@@ -1,7 +1,6 @@
 
 provider "google" {
   version = "3.5.0"
-  credentials = file("C:/key/key.json")
   project = "haram-326012"
   region  = "asia-northeast3"
   zone         = "asia-northeast3-a"
@@ -30,7 +29,7 @@ resource "google_compute_instance" "default245" {
     foo = "bar"
   }
 
-  metadata_startup_script = file("C:/code/code.sh")
+  metadata_startup_script = file("code.sh")
 }
 
 

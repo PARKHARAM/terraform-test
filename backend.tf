@@ -4,7 +4,7 @@ terraform{
     }
 
     backend "gcs"{
-        #credentials = "C:/key/haram.json"
+      
         bucket      = "haram-bucket2"
         prefix      = "jenkins.terraform.tfstate"
     }

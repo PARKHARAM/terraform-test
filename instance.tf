@@ -1,7 +1,7 @@
 
 
 
-resource "google_compute_instance" "default850" {
+resource "google_compute_instance" "default8520" {
   name         = var.VM_NAME
   machine_type = var.VM_MACHINE_TYPE
   zone         = var.VM_ZONE

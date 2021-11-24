@@ -1,5 +1,5 @@
 data "template_file" "jenkins-init"{
-    template = file("./code.sh")
+    template = file("gkfka133/code.sh")
 
     vars ={
         JENKINS_VERSION = var.JENKINS_VERSION

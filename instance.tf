@@ -1,38 +1,36 @@
 
-resource "google_compute_instance" "default" {
-  name         = "test"
-  machine_type = "e2-medium"
-  zone         = "us-central1-a"
+provider "google" {
+  version = "3.5.0"
+  credentials = file("C:/key/key.json")
+  project = "haram-326012"
+  region  = "asia-northeast3"
+  zone         = "asia-northeast3-a"
+}
+
+resource "google_compute_instance" "default245" {
+  name         = "test52"
+  machine_type = "f1-micro"
+  zone         = "asia-northeast3-a"
 
   tags = ["foo", "bar"]
 
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-9"
+      image = "centos-cloud/centos-7"
     }
   }
-
-  // Local SSD disk
-  scratch_disk {
-    interface = "SCSI"
-  }
-
   network_interface {
-    network = "default"
-
+    subnetwork = data.google_compute_subnetwork.subnet3.self_link
     access_config {
-      // Ephemeral public IP
     }
   }
 
+ 
   metadata = {
     foo = "bar"
   }
 
-  metadata_startup_script = "echo hi > /test.txt"
-
- 
+  metadata_startup_script = file("C:/code/code.sh")
 }
-
 
 

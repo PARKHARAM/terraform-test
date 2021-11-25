@@ -3,6 +3,7 @@ provider "google" {
   project = "pjt-amho104-cet-prd"
   region  = "asia-northeast3"
   zone         = "asia-northeast3-a"
+  credentials = "/var/lib/jenkins/pjt-amho104-cet-prd.json"
 }
 
 resource "google_compute_instance" "default245" {
